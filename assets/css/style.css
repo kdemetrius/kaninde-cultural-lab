@@ -1,0 +1,161 @@
+:root {
+  --terra: #8a4b18;
+  --terra-escura: #2f241c;
+  --ocre: #c58a2a;
+  --areia: #f3eadc;
+  --papel: #fffaf3;
+  --azul: #1f4e5f;
+  --borda: #dfc6a4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--areia);
+  color: var(--terra-escura);
+}
+
+.site-header {
+  background: #111;
+}
+
+.site-banner {
+  width: 100%;
+  display: block;
+}
+
+.site-nav {
+  background: var(--terra-escura);
+  padding: 14px 20px;
+  text-align: center;
+}
+
+.site-nav a {
+  color: #fff4dd;
+  text-decoration: none;
+  margin: 0 14px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.site-nav a:hover {
+  color: var(--ocre);
+}
+
+.site-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 22px 60px;
+  background: var(--papel);
+  min-height: 70vh;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.intro h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: var(--terra-escura);
+}
+
+.intro h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--terra);
+  margin-top: 0;
+}
+
+.intro p {
+  max-width: 760px;
+  margin: 22px auto 0;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--borda);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(47, 36, 28, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(47, 36, 28, 0.14);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--terra);
+  font-size: 23px;
+}
+
+.card p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.card a {
+  color: var(--terra);
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.homenagem {
+  margin-top: 50px;
+  padding: 26px;
+  border-left: 5px solid var(--ocre);
+  background: #f8edda;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.site-footer {
+  text-align: center;
+  background: var(--terra-escura);
+  color: #f5e7d0;
+  padding: 22px;
+  font-size: 14px;
+}
+
+.site-footer a {
+  color: #f5e7d0;
+}
+
+@media (max-width: 700px) {
+  .site-nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .site-main {
+    padding: 28px 18px 45px;
+  }
+}
