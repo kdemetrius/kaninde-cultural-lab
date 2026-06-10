@@ -19,15 +19,24 @@ body {
   color: var(--terra-escura);
 }
 
+/* Banner principal */
 .site-header {
   background: #111;
+  overflow: hidden;
+  height: 25vh;
+  min-height: 180px;
+  max-height: 260px;
 }
 
 .site-banner {
   width: 100%;
+  height: 100%;
   display: block;
+  object-fit: cover;
+  object-position: center center;
 }
 
+/* Menu */
 .site-nav {
   background: var(--terra-escura);
   padding: 14px 20px;
@@ -46,6 +55,7 @@ body {
   color: var(--ocre);
 }
 
+/* Área principal */
 .site-main {
   max-width: 1100px;
   margin: 0 auto;
@@ -79,6 +89,7 @@ body {
   line-height: 1.7;
 }
 
+/* Cards da página inicial */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -120,6 +131,7 @@ body {
   text-decoration: underline;
 }
 
+/* Bloco de homenagem */
 .homenagem {
   margin-top: 50px;
   padding: 26px;
@@ -129,6 +141,7 @@ body {
   line-height: 1.7;
 }
 
+/* Rodapé */
 .site-footer {
   text-align: center;
   background: var(--terra-escura);
@@ -141,7 +154,24 @@ body {
   color: #f5e7d0;
 }
 
+/* Celular */
 @media (max-width: 700px) {
+  .site-header {
+    height: 22vh;
+    min-height: 110px;
+    max-height: 150px;
+  }
+
+  .site-banner {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .site-nav {
+    padding: 10px 16px;
+  }
+
   .site-nav a {
     display: block;
     margin: 8px 0;
