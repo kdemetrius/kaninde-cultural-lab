@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ page.title }} | Kanindé Cultural</title>
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <header class="site-header">
+    <img class="site-banner" src="{{ '/assets/images/banner_kc.png' | relative_url }}" alt="Banner Kanindé Cultural em homenagem a Arievaldo Viana">
+  </header>
+
+  <nav class="site-nav">
+    <a href="{{ '/' | relative_url }}">Início</a>
+    <a href="{{ '/historia/' | relative_url }}">História</a>
+    <a href="{{ '/personagens/' | relative_url }}">Personagens</a>
+    <a href="{{ '/lugares/' | relative_url }}">Lugares</a>
+    <a href="{{ '/cultura/' | relative_url }}">Cultura Popular</a>
+    <a href="{{ '/galeria/' | relative_url }}">Galeria</a>
+    <a href="{{ '/videos/' | relative_url }}">Vídeos</a>
+    <a href="{{ '/fontes/' | relative_url }}">Fontes</a>
+  </nav>
+
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    Kanindé Cultural — museu virtual da memória, cultura e história de Canindé, Ceará.
+  </footer>
+
+</body>
+</html>
